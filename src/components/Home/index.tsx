@@ -27,6 +27,7 @@ export function HomeComponent() {
         <Flex justify="center">
           <Image
             src="/images/assets/Airplane.svg"
+            alt="Imagem Aviao"
             objectFit="cover"
             h={["170", "200"]}
           />

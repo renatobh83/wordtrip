@@ -5,7 +5,8 @@ import { useBreakpointValue } from "@chakra-ui/react";
 
 import { ContinentIndex } from "../../components/Continent";
 
-import data from "../../data.json";
+import api from "../../services/api";
+import { useRouter } from "next/router";
 
 interface ContinentProps {
   continent: {
@@ -26,43 +27,36 @@ interface ContinentProps {
 }
 
 export default function Continent({ continent }: ContinentProps) {
+  const router = useRouter();
   const isWideVersion = useBreakpointValue({ base: false, lg: true });
-
-  const property = {
-    imageUrl: "null",
-    imageAlt: "Rear view of modern home with pool",
-    beds: 3,
-    baths: 2,
-    title: "Modern home in city center in the heart of historic Los Angeles",
-    formattedPrice: "$1,900.00",
-    reviewCount: 34,
-    rating: 4,
-  };
-
+  if (router.isFallback) {
+    return <h1>Loading...</h1>;
+  }
   return <ContinentIndex continent={continent} />;
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
+  const { data } = await api.get("/continents");
   const paths = data.map((continent) => ({
     params: { id: continent.id },
   }));
 
   return {
     paths,
-    fallback: "blocking",
+    fallback: true,
   };
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { id } = params;
-
-  const continent = data.find((continent) => continent.id === id);
-
-  if (continent) {
+  let continent = null;
+  try {
+    const response = await api.get(`/continents/${id}`);
+    continent = response.data;
     return {
       props: { continent },
     };
-  } else {
+  } catch (error) {
     return {
       redirect: {
         destination: "/",

@@ -1,28 +1,23 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination, Navigation, EffectFade } from "swiper";
 import { Image, Text, Box, Link as ChackraLink } from "@chakra-ui/react";
-import dataApi from "./../../data.json";
-import { useState } from "react";
+
 import Link from "next/link";
-import { useEffect } from "react";
 SwiperCore.use([Pagination, Navigation, EffectFade]);
 
 interface DataProps {
-  id: string;
-  name: string;
-  imgUrl: string;
-  bannerImg: string;
-  desc: string;
-  info: string;
-  numPaises: number;
-  langs: number;
+  continents: {
+    id: string;
+    name: string;
+    imgUrl: string;
+    bannerImg: string;
+    desc: string;
+    info: string;
+    numPaises: number;
+    langs: number;
+  }[];
 }
-export function SwiperComponent() {
-  const [continents, setContinents] = useState<DataProps[]>([] as DataProps[]);
-
-  useEffect(() => {
-    setContinents(dataApi);
-  }, []);
+export function SwiperComponent({ continents }: DataProps) {
   return (
     <Swiper
       slidesPerView={1}
@@ -36,6 +31,7 @@ export function SwiperComponent() {
         <SwiperSlide key={d.id}>
           <Image
             src={d.bannerImg}
+            alt="banner imagem"
             my="3"
             w="1240"
             p={["0", "3"]}
@@ -52,7 +48,7 @@ export function SwiperComponent() {
               {d.name}
             </Text>{" "}
             <ChackraLink>
-              <Link href={`/continent/${d.id}`}>
+              <Link href={`/continent/${d.id}`} passHref>
                 <Text
                   color="white"
                   fontSize={["sm", "lg"]}

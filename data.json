@@ -1,0 +1,141 @@
+{
+  "continents": [
+    {
+      "id": "1",
+      "name": "Europa",
+      "numPaises": "50",
+      "langs":"60",
+      "bannerImg" :"/images/continent/europa.svg",
+      "imgUrl" :"/images/country/europa.svg",
+      "altBanner": "Europa imagem",
+      "desc": " A Europa é, por convenção, um dos seis continentes do mundo.Compreendendo a península ocidental da Eurásia, a Europa  geralmente divide-se da Ásia a leste pela divisória de águas dosmontes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
+      "info": "O continente mais antigo",
+      "city":[
+          {
+              "city":"Londres",
+              "country":"Reino Unido",
+              "img":  "/images/country/europa/londres.svg",
+              "avatar": "/images/country/europa/fl.svg"
+          },
+          {
+              "city":"Paris",
+              "country":"França",
+              "img":  "/images/country/europa/paris.svg",
+              "avatar": "/images/country/europa/fp.png"
+          }
+      ]
+
+  },
+  {
+      "id":"2",
+      "name" : "América do Norte",
+      "bannerImg" :"/images/continent/americaNorte.svg",
+      "imgUrl" :"/images/country/europa.svg",
+      "info": "Um subcontinente de porção setentrional",
+      "desc": "A América do Norte é um subcontinente que compreende a porção setentrional do continente americano. Existem duas formas de classificar esse continente: a primeira considera que a América do Norte é apenas a parte mais setentrional da América, separada da América Central na fronteira entre o México e a Guatemala, a segunda classificação reconhece apenas uma América do Norte e uma América do Sul, traçando o limite no Istmo do Panamá (umas vezes no Canal do Panamá, outras na fronteira entre o Panamá e a Colômbia). Pela última definição, a América do Norte incluiria a América Central Continental e Insular (Caribe).",
+      "numPaises": "3",
+      "langs":"6",
+      "city":[
+          {
+              "city":"New York City",
+              "country":"USA",
+              "img":  "/images/country/americanorte/newyork.svg",
+              "avatar": "/images/country/americanorte/fny.png"
+          }
+      ]
+  },
+  {
+      "id":"3",
+      "name" : "América do Sul",
+      "bannerImg" :"/images/continent/americaSul.svg",
+      "imgUrl" :"/images/country/europa.svg",
+      "info": "Critérios geográficos",
+      "numPaises": "12",
+      "langs":"9",
+      "desc": "A América do Sul é um continente[2][3] que compreende a porção meridional da América. Também é considerada um subcontinente do continente americano.[4][5] A sua extensão é de 17 819 100 km², abrangendo 12% da superfície terrestre e 6% da população mundial. Une-se à América Central a norte pelo istmo do Panamá e se separa da Antártida ao sul pelo estreito de Drake.",
+      "city":[
+          {
+              "city":"Rio de Janeiro",
+              "country":"Brasil",
+              "img":  "/images/country/americasul/riodejaneiro.svg",
+              "avatar": "/images/country/americasul/frj.png"
+          }
+      ]
+  },
+  {
+      "id":"4",
+      "name" : "Asia",
+      "numPaises": "50",
+      "langs":"+30",
+      "bannerImg" :"/images/continent/asia.svg",
+      "imgUrl" :"/images/country/europa.svg",
+      "info": "O maior dos continentes",
+      "desc": "A Ásia é o maior dos continentes, tanto em área como em população. Abrange um terço das partes sólidas da superfície da Terra e é responsável por abrigar quase três quintos da população mundial. A Ásia faz fronteira no lado ocidental com a África e com a Europa, e no lado oriental com o oceano Pacífico, a Oceania e, em menor proporção, com a América do Norte, pelo Estreito de Bering.",
+      "city":[
+          {
+              "city":"Hong Kong",
+              "country":"China",
+              "img":  "/images/country/asia/hongkong.svg",
+              "avatar": "/images/country/asia/fhk.png"
+          }, {
+              "city":"Bangkok",
+              "country":"Tailândia",
+              "img":  "/images/country/asia/bangkok.svg",
+              "avatar": "/images/country/asia/fbk.png"
+          },
+          {
+              "city":"Macau",
+              "country":"China",
+              "img":  "/images/country/asia/macau.svg",
+              "avatar": "/images/country/asia/fmc.png"
+          },
+          {
+              "city":"Singapura",
+              "country":"Singapura",
+              "img":  "/images/country/asia/singapura.svg",
+              "avatar": "/images/country/asia/fsin.png"
+          }
+      ]
+  },
+  {
+      "id":"5",
+      "name" : "Africa",
+      "numPaises": "54",
+      "langs":"+100",
+      "bannerImg" :"/images/continent/africa.svg",
+      "imgUrl" :"/images/country/europa.svg",
+      "info": "Terceiro continente mais extenso",
+      "desc": "A África é o terceiro continente mais extenso com cerca de 30 milhões de quilômetros quadrados, cobrindo 20,3 % da área total da terra firme do planeta. É o segundo continente mais populoso da Terra (atrás da Ásia) com cerca de mil milhões de pessoas (estimativa para 2005), representando cerca de um sétimo da população do mundo, e 54 países independentes. Apresenta grande diversidade étnica, cultural, social e política. Dos trinta países mais pobres do mundo, pelo menos 21 são africanos.",
+      "city":[
+          {
+              "city":"Johannesburg",
+              "country":"Cidade na África do Sul",
+              "img":  "/images/country/africa/johannesburg.svg",
+              "avatar": "/images/country/africa/fj.png"
+          }
+      ]
+
+  },
+  {
+      "id":"6",
+      "name" : "Oceania",
+      "bannerImg" :"/images/continent/oceania.svg",
+      "imgUrl" :"/images/country/europa.svg",
+      "desc": "Oceania ou Oceânia é uma região geográfica composta por vários grupos de ilhas do oceano Pacífico (Polinésia, Melanésia e Micronésia). O termo Oceania foi criado em 1831 pelo explorador francês Dumont d'Urville.",
+      "info": "Novíssimo Mundo",
+      "numPaises": "16",
+      "langs":"18",
+      "city":[
+          {
+              "city":"Sidney",
+              "country":"Australia",
+              "img":  "/images/country/oceania/sidney.svg",
+              "avatar": "/images/country/oceania/fs.jpg"
+          }
+      ]
+  }
+
+
+  ]
+
+}

@@ -41,7 +41,7 @@ export function DataForContinent({ infoContinent }: DataForContinentProps) {
             label="Cidades entre as 100 + visitadas"
             aria-label="A tooltip"
           >
-            <Image src="/images/assets/info.svg" />
+            <Image src="/images/assets/info.svg" alt="Info" />
           </Tooltip>
         </Box>
       </VStack>

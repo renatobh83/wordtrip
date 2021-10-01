@@ -29,7 +29,7 @@ export function Header({ isAcitve = false }: HeaderProps) {
     >
       {isAcitve ? (
         <ChackraLink>
-          <Link href="/">
+          <Link href="/" passHref>
             <Icon
               as={FaAngleLeft}
               fontSize="lg"

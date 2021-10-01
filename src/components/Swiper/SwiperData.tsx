@@ -14,9 +14,9 @@ export function SwiperData({ property }: SwiperDataProps) {
   return (
     <>
       {property?.map((c) => (
-        <Box maxW="lg" borderWidth="1px" overflow="hidden">
+        <Box maxW="lg" borderWidth="1px" overflow="hidden" key={c.city}>
           <>
-            <Image src={c.img} key={c.city} />
+            <Image src={c.img} alt="Imagem cidade" />
             <Box p="3">
               <Box
                 mt="1"
