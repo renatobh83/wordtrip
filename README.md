@@ -1,7 +1,7 @@
 # Rockeseat Ignite Reactjs - Word trip
 
 
-#Dados do continentes em data.json
+### Dados do continentes em data.json
 
 ```bash
 # clone repository
